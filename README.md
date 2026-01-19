@@ -131,23 +131,6 @@ Threats are scored using Likelihood × Impact:
 | 7-14 | 🟡 Medium |
 | 15-25 | 🔴 High |
 
-## Configuration
-
-### Environment Variables
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `GROQ_API_KEY` | Groq API key | Required |
-| `GROQ_MODEL` | Model to use | `llama-3.3-70b-versatile` |
-| `LLM_TEMPERATURE` | Temperature setting | `0.1` |
-| `LLM_MAX_TOKENS` | Max tokens per request | `8192` |
-
-### Available Groq Models
-
-- `llama-3.3-70b-versatile` (default) - Best quality
-- `llama-3.1-8b-instant` - Faster, lighter
-- `mixtral-8x7b-32768` - Good for long context
-- `gemma2-9b-it` - Google's Gemma 2
 
 ## Pipeline Architecture
 
@@ -240,12 +223,4 @@ threat-model -i examples/auth_feature.md -o out/auth_report.md -j out/auth_repor
 - Quality depends on input document detail
 - Not a replacement for human security review
 - May miss context-specific vulnerabilities
-
-## License
-
-MIT
-
-## Contributing
-
-Contributions welcome! Please read the contributing guidelines before submitting PRs.
 
